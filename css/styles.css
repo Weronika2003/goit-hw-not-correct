@@ -1,30 +1,4 @@
-body {
-    font-family: 'roboto', 'Raleway', 'sans-serif';
-    color: #212121;
-    background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 1600px;
-}
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.section {
-    padding: 94px;
-}
-li {
-    list-style: none;
-}
 .page-header {
     border-bottom: #ECECEC solid 1px;
 }
@@ -319,7 +293,7 @@ li {
 .modal__link--regulations{
     color:#2196F3;
 }
-.modal--visually-hidden{
+.visually-hidden{
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     clip:rect(1px 1px 1px 1px);
