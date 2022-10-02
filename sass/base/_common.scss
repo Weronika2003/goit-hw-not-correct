@@ -1,7 +1,7 @@
 body {
-    font-family: 'roboto', 'Raleway', 'sans-serif';
-    color: #212121;
-    background-color: #FFFFFF;
+    font-family: $main-font, $logo-font, $second-font;
+    color: $font-color;
+    background-color: $main-color;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,14 +27,14 @@ li {
 }
 
 .btn {
-    background: #2196F3;
+    background: $link-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $main-color;
     text-align: center;
     align-items: center;
     cursor: pointer;

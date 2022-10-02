@@ -1,2 +1,5 @@
+@use './utils/visualy-hidden';
 @use 'base/common';
 @use './utils/variables';
+@use './utils/variables.scss';
+@use './components/page-header';
