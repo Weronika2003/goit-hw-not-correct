@@ -1,0 +1,115 @@
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+
+.modal__div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 40px;
+}
+
+
+
+.modal__form {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal__label {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.modal__input {
+    margin-top: 4px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.modal__icons {
+    position: absolute;
+    top: 29px;
+    left: 15px;
+}
+
+.modal__input:focus,
+.modal__comment:focus {
+    border-color: #2196F3;
+    outline: none;
+}
+
+.modal__input:focus-within~svg {
+    fill: #2196F3;
+}
+
+.modal__comment {
+    resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.modal__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__paragraph--regulations {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+    white-space: nowrap;
+}
+
+.modal__paragraph--regulations::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+    margin-left: 14px;
+}
+
+.modal--policy-regulations:checked+.modal__paragraph--regulations::before {
+    background-color: #2196F3;
+    border: none;
+    background-image: url("../Images/checked.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 11px 8px;
+}
+
+.modal__link--regulations {
+    color: #2196F3;
+}

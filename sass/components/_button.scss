@@ -1,0 +1,54 @@
+.btn {
+    background: $link-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $main-color;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.main-web__btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+.modal__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal__btn-close:hover .modal__icon--close,
+.modal__btn-close:focus .modal__icon--close {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2196F3;
+}
+.modal__btn-send {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196F3;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+    background: #2196F3;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal__div__btn-send {
+    display: flex;
+    justify-content: center;
+}

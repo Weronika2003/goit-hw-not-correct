@@ -1,0 +1,13 @@
+.page-header--logo {
+    color: $link-color;
+    font-family: $logo-font;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-right: 47px;
+    align-content: center;
+}
+.page-header__span--logo {
+    color: $dark-color;
+}
