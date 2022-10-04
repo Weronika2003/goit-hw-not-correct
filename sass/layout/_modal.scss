@@ -1,19 +1,8 @@
 
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    min-height: 581px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-
-.modal__div {
+   
+    &__div {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -22,14 +11,14 @@
 
 
 
-.modal__form {
+&__form {
     position: relative;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.modal__label {
+&__label {
     position: relative;
     margin-bottom: 10px;
     font-size: 12px;
@@ -38,7 +27,7 @@
     color: #757575;
 }
 
-.modal__input {
+&__input {
     margin-top: 4px;
     width: 448px;
     height: 40px;
@@ -46,23 +35,23 @@
     border-radius: 4px;
 }
 
-.modal__icons {
+&__icons {
     position: absolute;
     top: 29px;
     left: 15px;
 }
 
-.modal__input:focus,
-.modal__comment:focus {
+&__input:focus,
+&__comment:focus {
     border-color: #2196F3;
     outline: none;
 }
 
-.modal__input:focus-within~svg {
+&__input:focus-within~svg {
     fill: #2196F3;
 }
 
-.modal__comment {
+&__comment {
     resize: none;
     font-size: 12px;
     line-height: 1.17;
@@ -75,11 +64,15 @@
     margin-top: 4px;
 }
 
-.modal__comment::placeholder {
+&__comment::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+&__link--regulations {
+    color: #2196F3;
+}
 }
 
 .modal__paragraph--regulations {
@@ -88,9 +81,7 @@
     letter-spacing: 0.03em;
     color: #757575;
     white-space: nowrap;
-}
-
-.modal__paragraph--regulations::before {
+&::before {
     content: "";
     display: inline-block;
     width: 16px;
@@ -110,6 +101,4 @@
     background-size: 11px 8px;
 }
 
-.modal__link--regulations {
-    color: #2196F3;
 }

@@ -1,9 +1,8 @@
 .team {
     background: #F5F4FA;
     height: 708px;
-}
 
-.team__icons__list {
+&__icons__list {
     margin-top: 16px;
     padding-bottom: 30px;
     display: flex;
@@ -12,26 +11,19 @@
     gap: 10px;
 }
 
-.team__icon {
+&__icon {
     background-size: contain;
     fill: #AFB1B8;
+    &:hover {
+            border-radius: 50%;
+            border-width: 44px;
+            background-color: #2196F3;
+            fill: #FFFFFF;
+            cursor: pointer;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 }
-
-a .team__link {
-    height: 44px;
-    display: block;
-}
-
-.team__icon:hover {
-    border-radius: 50%;
-    border-width: 44px;
-    background-color: #2196F3;
-    fill: #FFFFFF;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__link:focus .team__icon {
+&__link:focus &__icon {
     outline: none;
     border-radius: 50%;
     border-width: 44px;
@@ -41,7 +33,7 @@ a .team__link {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__cards {
+&__cards {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -53,7 +45,7 @@ a .team__link {
     justify-content: space-evenly;
 }
 
-.team__label {
+&__label {
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
@@ -62,13 +54,13 @@ a .team__link {
     padding: 0;
 }
 
-.team__box {
+&__box {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team__name {
+&__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -79,4 +71,9 @@ a .team__link {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+}
+a .team__link {
+    height: 44px;
+    display: block;
 }

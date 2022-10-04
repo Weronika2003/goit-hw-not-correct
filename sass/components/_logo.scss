@@ -1,13 +1,32 @@
-.page-header--logo {
-    color: $link-color;
-    font-family: $logo-font;
+.page-header{
+    &--logo{
+    color: #2196F3;
+    font-family: 'ralaway';
     font-size: 26px;
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-right: 47px;
+    align-content: center;}
+&__span--logo {
+    color: #000000;
+}
+}
+.footer {
+    &__logo{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    width: 145px;
+    padding-bottom: 20px;
+    display: flex;
     align-content: center;
 }
-.page-header__span--logo {
-    color: $dark-color;
+&__studio {
+    color: #FFFFFF;
+}
 }
