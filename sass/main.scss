@@ -1,20 +1,25 @@
-@use 'utils/visualy-hidden';
-@use 'base/common';
-@use 'utils/variables';
-@use 'components/button';
-@use 'components/container';
-@use 'components/headings';
-@use 'components/logo';
-@use 'components/section';
-@use 'layout/page-header';
-@use 'layout/main-web';
-@use 'layout/modal';
-@use 'layout/cards-lorem';
-@use 'layout/demonstration';
-@use 'layout/team';
-@use 'layout/clients';
-@use 'layout/portfolio';
-@use 'layout/footer';
-@use 'components/list';
+@import 'utils/visualy-hidden';
+@import 'utils/variables';
+
+@import 'base/common';
+
+@import 'components/button';
+@import 'components/container';
+@import 'components/headings';
+@import 'components/logo';
+@import 'components/section';
+@import 'components/list';
+@import 'components/backdrop';
+
+@import 'layout/page-header';
+@import 'layout/main-web';
+@import 'layout/modal';
+@import 'layout/cards-lorem';
+@import 'layout/demonstration';
+@import 'layout/team';
+@import 'layout/clients';
+@import 'layout/portfolio';
+@import 'layout/footer';
+
 
 
